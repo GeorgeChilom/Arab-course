@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "prof-arabe": {
+      "hosting": {
+        "CoursArabe": [
+          "prof-arabe"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "prof-arabe"
+  }
+}
