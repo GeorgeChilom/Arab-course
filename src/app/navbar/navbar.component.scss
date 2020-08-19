@@ -1,0 +1,159 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  .toolbar {
+    background: #B937B5;
+    color: white;
+  }
+
+  .is-mobile .toolbar {
+    position: fixed;
+    /* Make sure the toolbar will stay on top of the content as it scrolls past. */
+    z-index: 2;
+  }
+  
+  h1.app-name {
+    margin-left: 20px;
+  }
+  
+  .is-mobile .sidenav-container {
+    /* When the sidenav is fixed, don't constrain the height of the sidenav container. This allows the
+       `<body>` to be our scrolling element for mobile layouts. */
+    flex: 1 0 auto;
+  }
+  
+  .menu-button {
+    
+    border-radius: 50%;
+    position: relative;
+    background-color: #B937B5;
+    border: none;
+    outline:none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  .menu-button:hover {
+    background: #E656E1;
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  mat-nav-list {
+    padding: 0;
+  }
+
+  .list-item {
+    position: relative;
+    background-color: #B937B5;
+    color: #E0C3DF;
+    border: none;
+    outline:none;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+  }
+  .list-item:focus {
+    background-color: #B937B5;
+  }
+  .list-item:hover {
+    background: #E656E1;
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  // .list-item:active {
+  //   background: #E656E1;
+  //   color: white;
+  // }
+  // .list-item:checked {
+  //   background: #E656E1;
+  //   color: white;
+  // }
+  // .list-item:enabled {
+  //   background: #E656E1;
+  //   color: white;
+  // }
+
+.p1 {
+  -moz-animation: cssAnimation 2s ease-in;
+  -webkit-animation: cssAnimation 2s ease-in;
+  -o-animation: cssAnimation 2s ease-in;
+  animation: cssAnimation 2s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+.p2 {
+  -moz-animation: cssAnimation 6s ease-in;
+  -webkit-animation: cssAnimation 6s ease-in;
+  -o-animation: cssAnimation 6s ease-in;
+  animation: cssAnimation 6s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}  
+.p3 {
+  -moz-animation: cssAnimation 10s ease-in;
+  -webkit-animation: cssAnimation 10s ease-in;
+  -o-animation: cssAnimation 10s ease-in;
+  animation: cssAnimation 10s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}  
+.p4 {
+  -moz-animation: cssAnimation 14s ease-in;
+  -webkit-animation: cssAnimation 14s ease-in;
+  -o-animation: cssAnimation 14s ease-in;
+  animation: cssAnimation 14s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}  
+.p5 {
+  -moz-animation: cssAnimation 14s ease-in;
+  -webkit-animation: cssAnimation 14s ease-in;
+  -o-animation: cssAnimation 14s ease-in;
+  animation: cssAnimation 14s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+} 
+.p6 {
+  -moz-animation: cssAnimation 18s ease-in;
+  -webkit-animation: cssAnimation 18s ease-in;
+  -o-animation: cssAnimation 18s ease-in;
+  animation: cssAnimation 18s ease-in;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+} 
+
+@keyframes cssAnimation {
+  0%   {opacity: 0;display:none;}
+  50%  {opacity: 0;display:block;}
+  100% {opacity: 1;display:block;}
+}
+
+  mat-sidenav-content {
+    background-image: url("https://images.unsplash.com/photo-1570715746786-e7ca46b1e50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-size: cover;
+    background-repeat:no-repeat;
+  }
+
+  #g1, #g2, #g3 {
+    font-size: 20px;
+  }
+
+  .hand-writing {
+    font-family: 'Dancing Script', cursive;
+    font-size: 18px;
+  }
