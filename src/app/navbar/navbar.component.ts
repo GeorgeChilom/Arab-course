@@ -18,6 +18,11 @@ export class NavbarComponent implements OnDestroy {
     this.mobileQuery.addListener(this._mobileQueryListener);
   }
 
+  contact() {
+     const fb = this.mobileQuery.matches ? "https://m.facebook.com/proph.arabe.7" : "https://facebook.com/proph.arabe.7";
+     window.open(fb, "_blank");
+  }
+
   ngOnDestroy(): void {
     this.mobileQuery.removeListener(this._mobileQueryListener);
   }

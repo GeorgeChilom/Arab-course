@@ -1,0 +1,22 @@
+<mat-carousel
+  timings="250ms ease-in"
+  [autoplay]="true"
+  interval="5000"
+  color="primary"
+  maxWidth="auto"
+  proportion="100"
+  slides="9"
+  [loop]="true"
+  [hideArrows]="false"
+  [hideIndicators]="false"
+  [useKeyboard]="true"
+  [useMouseWheel]="false"
+  orientation="ltr"
+>
+  <mat-carousel-slide
+    #matCarouselSlide
+    *ngFor="let slide of slides; let i = index"
+    [image]="slide.image">
+        <span class="hand-writing">{{ opinions[i] }}</span>
+    </mat-carousel-slide>
+</mat-carousel>

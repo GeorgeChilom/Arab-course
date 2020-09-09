@@ -1,7 +1,7 @@
 <div class="menu-container" [class.is-mobile]="mobileQuery.matches">
     <mat-toolbar color="primary" class="toolbar">
       <button mat-icon-button class="menu-button" (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
-      <h1 class="app-name">Cours d'arabe</h1>
+      <h1 class="app-name" [style.marginLeft.%]="mobileQuery.matches ? 15 : 40">Cours d'arabe</h1>
     </mat-toolbar>
   
     <mat-sidenav-container class="sidenav-container"
@@ -10,7 +10,7 @@
                    [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
         <mat-nav-list [style.position]="mobileQuery.matches ? 'relative' : 'fixed'">
           <a mat-list-item class="list-item" href="#g1">Salam alikom</a>
-          <a mat-list-item class="list-item" href="#g2">Opinions</a>
+          <a mat-list-item class="list-item" href="#g2">Avis</a>
           <a mat-list-item class="list-item" href="#g3">Contact</a>
         </mat-nav-list>
       </mat-sidenav>
@@ -19,34 +19,31 @@
         <div [style.margin-left.%] ="mobileQuery.matches ? 0 : 30"
              [style.margin-right.%]="mobileQuery.matches ? 0 : 30">
             <b>
+                <br>
                 <span id="g1">Salam alikom</span>
                 <p class="p1">Je vous propose des cours d’arabe littéraire dans un cadre qui vous permettrai de ne pas vous déranger au quotidien.<br></p>
                 <p class="p2">Effectivement ces cours ont lieux par l’intermédiaire de SKYPE aux heures qui vous conviennent, de plus mon expérience et ma technique d’apprentissage vous feront avancer tout en douceur tout en assimilant les bases de la langue afin d’arriver à un niveau plus élevé.<br></p>
                 <p class="p3">Le but sera la maitrise de la grammaire arabe qui est une clé essentielle pour savoir lire et écrire sans commettre d’erreur.<br></p>
-                <p class="p4">Vous pouvez trouver ci-dessous des opinions de mes élèves pour que vous puissiez vous renseigner sur la qualité de mes cours et ainsi vous lancer dans ce projet d’apprentissage de cette magnifique langue.</p>
-            </b>
-            <hr>
+                <p class="p4">La méthode pédagogique que j'utilise avec les étudiants dans mon travail, c'est que vous passiez un test de classement pour déterminer votre niveau en langue arabe et que vous utilisiez ensuite le programme approprié pour vous.<br></p>
+                <div class="p4">
+                  <button class="price-button btn btn-lg btn-link button-glow">4 séances d'essai remboursables</button><br>
+                </div>
+                <p class="p4">Apprendre la langue arabe est comme une aventure dans un nouveau monde, une nouvelle culture, donc apprendre cette langue nécessite également de la patience et du goût.<br></p>
+                <p class="p4">Vous pouvez trouver ci-dessous des opinions de mes élèves pour que vous puissiez vous renseigner sur la qualité de mes cours et ainsi vous lancer dans ce projet d’apprentissage de cette magnifique langue.<br></p>
+              </b>
         </div>
         <div [style.margin-left.%] ="mobileQuery.matches ? 0 : 30"
              [style.margin-right.%]="mobileQuery.matches ? 0 : 30"
              class="p5">
-            <b>
-                <span id="g2">Opinions</span>
-                <p>George (RO): <span class="hand-writing">"Un prof tres celebre"</span></p>
-                <p>Salim (MA): <span class="hand-writing">"Un prof tres severe"</span></p>
-            </b>
-            <hr>
+             <br><app-carousel id="g2"></app-carousel><br><br>
         </div>
         <div [style.margin-left.%] ="mobileQuery.matches ? 0 : 30"
              [style.margin-right.%]="mobileQuery.matches ? 0 : 30"
-             class="p6">
-            <b>
-                <span id="g3">Contact</span>
-                <p>Mon contact sur Facebook: https://m.facebook.com/proph.arabe.7</p>
-                <p>Skype: kodssi4</p>
-                <p>Prix: 7 euro / 1h</p>
-            </b>
-            <hr>
+             class="p6" id="g3">
+            <button class="price-button btn btn-lg btn-link button-glow">PRIX ABORDABLE</button>
+            <br><br><br>
+            <button class="contact-button" (click)="contact()">Contactez-moi sur Facebook</button>
+            <div *ngIf="!mobileQuery.matches"><br><br><br></div>
         </div>
       </mat-sidenav-content>
     </mat-sidenav-container>

@@ -7,9 +7,9 @@
     left: 0;
     right: 0;
   }
-  
+
   .toolbar {
-    background: #B937B5;
+    background: #2D8CF3;
     color: white;
   }
 
@@ -20,7 +20,7 @@
   }
   
   h1.app-name {
-    margin-left: 20px;
+    font-size: 24px;
   }
   
   .is-mobile .sidenav-container {
@@ -30,10 +30,9 @@
   }
   
   .menu-button {
-    
     border-radius: 50%;
     position: relative;
-    background-color: #B937B5;
+    background-color: #2D8CF3;
     border: none;
     outline:none;
     text-align: center;
@@ -44,7 +43,7 @@
     cursor: pointer;
   }
   .menu-button:hover {
-    background: #E656E1;
+    background: #66AEFD;
     color: white;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
@@ -56,8 +55,9 @@
 
   .list-item {
     position: relative;
-    background-color: #B937B5;
-    color: #E0C3DF;
+    background-color: #2D8CF3;
+    color: #194C84;
+    font-weight: bold;
     border: none;
     outline:none;
     text-align: center;
@@ -66,27 +66,14 @@
     text-decoration: none;
   }
   .list-item:focus {
-    background-color: #B937B5;
+    background-color: #2D8CF3;
   }
   .list-item:hover {
-    background: #E656E1;
+    background: #66AEFD;
     color: white;
     -webkit-transition-duration: 0.4s; /* Safari */
     transition-duration: 0.4s;
   }
-
-  // .list-item:active {
-  //   background: #E656E1;
-  //   color: white;
-  // }
-  // .list-item:checked {
-  //   background: #E656E1;
-  //   color: white;
-  // }
-  // .list-item:enabled {
-  //   background: #E656E1;
-  //   color: white;
-  // }
 
 .p1 {
   -moz-animation: cssAnimation 2s ease-in;
@@ -104,7 +91,8 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }  
-.p3 {
+
+.p3, .p4, .p5, .p6 {
   -moz-animation: cssAnimation 10s ease-in;
   -webkit-animation: cssAnimation 10s ease-in;
   -o-animation: cssAnimation 10s ease-in;
@@ -112,30 +100,6 @@
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
 }  
-.p4 {
-  -moz-animation: cssAnimation 14s ease-in;
-  -webkit-animation: cssAnimation 14s ease-in;
-  -o-animation: cssAnimation 14s ease-in;
-  animation: cssAnimation 14s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-}  
-.p5 {
-  -moz-animation: cssAnimation 14s ease-in;
-  -webkit-animation: cssAnimation 14s ease-in;
-  -o-animation: cssAnimation 14s ease-in;
-  animation: cssAnimation 14s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-} 
-.p6 {
-  -moz-animation: cssAnimation 18s ease-in;
-  -webkit-animation: cssAnimation 18s ease-in;
-  -o-animation: cssAnimation 18s ease-in;
-  animation: cssAnimation 18s ease-in;
-  -webkit-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-} 
 
 @keyframes cssAnimation {
   0%   {opacity: 0;display:none;}
@@ -144,16 +108,55 @@
 }
 
   mat-sidenav-content {
-    background-image: url("https://images.unsplash.com/photo-1570715746786-e7ca46b1e50b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80");
+    background-image: url("https://image.freepik.com/free-photo/beautiful-sky-with-mountains-distance_1232-718.jpg");
     background-size: cover;
     background-repeat:no-repeat;
   }
 
-  #g1, #g2, #g3 {
-    font-size: 20px;
+  #g1 {
+    font-size: 22px;
   }
 
-  .hand-writing {
-    font-family: 'Dancing Script', cursive;
-    font-size: 18px;
+  .contact-button {
+    background: #2D8CF3;
+    border: none;
+    outline:none;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  .contact-button:hover {
+    background: #66AEFD;
+    color: white;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+  }
+
+  .price-button {
+    border-radius: 50%;
+    background: #2D8CF3;
+    border: none;
+    outline:none;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    text-decoration: none;
+    animation: glowing 1000ms infinite;
+  }
+
+  @keyframes glowing {
+    0% { box-shadow: 0 0 -40px #927a03; }
+    40% { box-shadow: 0 0 50px #927a03; }
+    60% { box-shadow: 0 0 50px #927a03; }
+    100% { box-shadow: 0 0 -40px #927a03; }
   }
